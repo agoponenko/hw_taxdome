@@ -117,7 +117,7 @@ def main(pdf_file_path):
     Main function to run the script from the command line.
     """
 
-    # These are the specific document types we would like to check according to description of Task.
+    # These are the specific document types we would like to check.
     desired_forms = {
         "f1040s1", "f1040s3", "f1040sa", 
         "f1040sb", "f1040sc", "f1040sd", "f1040se", 
