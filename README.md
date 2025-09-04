@@ -22,7 +22,7 @@ Solution for HW assignment from TaxDome
 
 ### Running service
 - In order to parse tax forms from PDF file and output the results to console, run the following command: `python parse_tax_forms.py <path_to_your_pdf_file.pdf>`
-- In order to calculate the metrics based on dataset in /data, run the following command: `python evaluate_solution.py`.
+- In order to calculate the metrics based on dataset in /data, run the following command: `python evaluate.py`.
 
 #### Metrics
 - The pipeline was designed to extract all possible forms written in ALL_FORM_PATTERNS variabel in `parse_tax_forms.py`. However, for the evaluation only the labels written in JSON files were taken into account:
@@ -33,7 +33,7 @@ desired_forms = {
             "1040f", "f8889", "f8949"
         }
 ```
-- The metrics are:
+- The metrics were generated using command `python evaluate.py data/input data/target`:
 ```
 {
     "overall_metrics": {
